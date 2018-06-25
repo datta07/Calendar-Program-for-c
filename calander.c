@@ -155,10 +155,10 @@ void same_year(int a,int b,int r)
 int main()
 {
 
-    int choice,date,month,year,date_code;
+    int choice,date,mon,year,day_code,i;
     char option;
     
-    char *day[7]={"sun","mon","tues","wednes","thus","fri","satur"};
+    char *days[7]={"sun","mon","tues","wednes","thus","fri","satur"};
     
     do 
     {
@@ -172,46 +172,47 @@ int main()
 	{
      case 1:
 	  printf("enter the date\n");
-	  scanf("%d",&a);
-	  printf("enter the month\n");
-	  scanf("%d",&b);
+	  scanf("%d",&date);
+	  printf("enter the mon\n");
+	  scanf("%d",&month);
 	  printf("enter the day(ex:-1 for sunday)\n1.sunday\t2.monday\t3.tuesday\n4.wednesday\t5.thursday\t6.friday\t7.saturday\nenter your option:-");
-	  scanf("%d",&r);
+	  scanf("%d",&day_code);
 	  title();
-	  same_year(a,b,r);
+	  same_year(date,mon,day_code);
 	  break;
 
 
 	case 2:
 	printf("enter year\n");
-	scanf("%d",&t);
+	scanf("%d",&year);
 	title();
-	for (b=1;b<=12;b++){
-	r=day(1,b,t);
-	month(r,b,t);
+	for (i=1;i<=12;i++)//to print 12 month
+	{
+	day_code = day (1,i,year);
+	month(day_code,i,year);
 	}
 	break;
 
 	  case 3: 
 	printf("enter month\n");
-	scanf("%d",&b);
+	scanf("%d",&month);
 	printf("enter year\n");
-	scanf("%d",&t);
+	scanf("%d",&year);
 	title();
-	r=day(1,b,t);
-	month(r,b,t);
+	day_code=day(1,mon,year);
+	month(day_code,mon,year);
 	break;
 	
        case 4:
  	printf("enter  date\n");
-	scanf("%d",&a);
+	scanf("%d",&date);
 	printf("enter month\n");
-	scanf("%d",&b);
+	scanf("%d",&mon);
 	printf("enter year\n");
-	scanf("%d",&t);
-	r=day(a,b,t);
+	scanf("%d",&year);
+	day_code=day(date,mon,year);
 	title();
-	printf("the day is %sday\n",da[r]);
+	printf("the day is %sday\n",days[day_code]);
 	break;
 	  }
     printf ("------------------------------------------------------------\n\n√√THANKYOU for entering the data\n\nif you want to continue press  \n1.continue\n2.stop\nenter the option:");
