@@ -173,8 +173,8 @@ int main()
      case 1:
 	  printf("enter the date\n");
 	  scanf("%d",&date);
-	  printf("enter the mon\n");
-	  scanf("%d",&month);
+	  printf("enter the month\n");
+	  scanf("%d",&mon);
 	  printf("enter the day(ex:-1 for sunday)\n1.sunday\t2.monday\t3.tuesday\n4.wednesday\t5.thursday\t6.friday\t7.saturday\nenter your option:-");
 	  scanf("%d",&day_code);
 	  title();
