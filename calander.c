@@ -195,7 +195,7 @@ int main()
 
 	  case 3: 
 	printf("enter month\n");
-	scanf("%d",&month);
+	scanf("%d",&mon);
 	printf("enter year\n");
 	scanf("%d",&year);
 	title();
