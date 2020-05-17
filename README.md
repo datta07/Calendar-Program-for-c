@@ -7,4 +7,4 @@ A User Friendly C Program For Calendar with attractive UI.
     4) To know the day of the date
 ## Example Sample Images
     1) Years having same day and date
-    ![](Result-images/1.PNG)
+   ![](Result-images/1.PNG)
