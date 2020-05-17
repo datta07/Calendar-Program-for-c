@@ -6,4 +6,5 @@ A User Friendly C Program For Calendar with attractive UI.
     3) Calendar of Given Month
     4) To know the day of the date
 ## Example Sample Images
-    1) Years having same day and date 
+    1) Years having same day and date
+    ![](pics/example.PNG)
